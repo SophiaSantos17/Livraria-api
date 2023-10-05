@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.box-categoraia {
+    position: relative;
+    display: inline-block;
+}
+
+.box-categoraia img {
+    width: 200px;
+    height: 300px;
+    transition: filter 0.3s; /* Adiciona uma transição suave */
+}
+
+.box-categoraia:hover img {
+    filter: brightness(0.4); /* Aplica um filtro de brilho quando hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s; 
+}
+.overlay p{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.box-categoraia:hover .overlay {
+    opacity: 1; /* Torna o overlay visível quando hover */
+}
+
+
+

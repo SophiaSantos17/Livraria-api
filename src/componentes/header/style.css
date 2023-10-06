@@ -58,7 +58,7 @@ header nav .box-menu button{
     cursor: pointer;
 }
 header nav .box-menu button:hover{
-    background-color: #27374D;
+    opacity: 0.6;
 }
 
 header nav .box-menu button img{
@@ -68,3 +68,82 @@ header nav .box-menu button img{
 
 
 
+header .menu-categorias{
+    position: fixed;
+    top: 0;
+    right: -100%; /* Comece com o menu fora da tela à direita */
+    width: 250px; /* ou a largura desejada para o menu */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #DDE6ED;
+    color: #27374D;
+    display: flex; 
+    flex-direction: column;
+    z-index: 1;
+    /* width: 200px; */
+    height: 100%;
+    padding: 1% 1% 0 3%;
+    justify-content: flex;
+    align-items: flex-start;
+    transition: right 0.5s linear;
+}
+.menu-categorias.menu-visivel {
+    right: 0; /* Quando o menu está visível, traga-o para dentro da tela */
+}
+header .menu-categorias .options{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #2d4; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu-categorias .options button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; 
+    cursor: pointer;
+
+}
+
+header .menu-categorias .options button img{
+    width: 30px;
+    height: 30px;
+}
+header .menu-categorias .options button:hover{
+    opacity: 0.6;
+}
+header .menu-categorias .options h3{
+    font-size: 25px;
+    font-weight: 900;
+    /* z-index: 3; */
+    font-weight: bolder;
+}
+
+header .menu-categorias .categorias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+header .menu-categorias .categorias a{
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+header .menu-categorias .categorias a:hover{
+    background-color: #27374D;
+    color: #DDE6ED;
+}

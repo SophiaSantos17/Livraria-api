@@ -1,23 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { getCategorias, getLivros } from '../../api/api';
+import { getLivros, getCategorias } from '../../api/api';
 import Header from '../../componentes/header';
 import Banner from '../../componentes/banner';
-import CardCategoria from '../../componentes/cardCategoria';
 import CardLivros from '../../componentes/cardLivro';
-
+import CardCategoria from '../../componentes/cardCategoria'
 import './style.css';
 
 const Home = () => {
   const [categorias, setCategorias] = useState([]);
   const [livros, setLivros] = useState([]);
 
-  useEffect(() => {
-    getCategorias()
-      .then(response => {
-        setCategorias(response.data);
-      })
-      .catch(error => console.error(error));
-  }, []);
 
   useEffect(() => {
     getLivros()
@@ -25,6 +17,15 @@ const Home = () => {
         setLivros(response.data);
       })
       .catch(error => console.error(error));
+  }, []);
+
+
+  useEffect(() => {
+    getCategorias()
+    .then(response => {
+      setCategorias(response.data);
+    } )
+    .catch(error => console.error(error));
   }, []);
   
   
@@ -36,7 +37,7 @@ const Home = () => {
         <h1>Categorias:</h1>
         <div className="categories">
           {categorias.map(categoria => (
-            <CardCategoria key={categoria.id} categoria={categoria.name} imgLivro={categoria.imagem} />
+            <CardCategoria key={categoria.idCategoria} categoria={categoria.nomeCategoria} imgLivro={categoria.img} />
           ))}
         </div>
       </div>
@@ -44,7 +45,7 @@ const Home = () => {
         <h1>Todos os livros</h1>
         <div className="box-infos-livros">
           {livros.map(livro => (
-            <CardLivros key={livro.id} imgLivro={livro.imagem} nome={livro.nome}/>
+            <CardLivros key={livro.chavePrimaria} imgLivro={livro.img} nome={livro.nomeLivro}/>
           ))}
         </div>
       </div>

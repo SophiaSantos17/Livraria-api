@@ -21,6 +21,8 @@
 .card-livro p{
     font-weight: bold;
     font-size: 20px;
+    width: 90%;
+    text-align: center;
 }
 
 .card-livro button{

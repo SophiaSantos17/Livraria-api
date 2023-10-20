@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    getCategorias()
+    getCategorias() 
       .then(response => {
         setCategorias(response.data);
       })
@@ -45,7 +45,7 @@ const Header = () => {
 
         <div className="categorias">
             {categorias.map(categoria => (
-                <a key={categoria.id} className="categoria" href="/">{categoria.name}</a>
+                <a key={categoria.idCategoria} className="categoria" href="/">{categoria.nomeCategoria}</a>
                 
             ))}
         </div>

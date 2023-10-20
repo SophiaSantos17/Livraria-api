@@ -54,5 +54,13 @@
     }
 }
 
+@media (max-width: 680px){
+   
+
+    .box-banner{
+        display: none;
+    }
+}
+
 
 /* @media () */

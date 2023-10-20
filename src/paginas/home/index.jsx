@@ -37,7 +37,7 @@ const Home = () => {
         <h1>Categorias:</h1>
         <div className="categories">
           {categorias.map(categoria => (
-            <CardCategoria key={categoria.idCategoria} categoria={categoria.nomeCategoria} imgLivro={categoria.img} />
+            <CardCategoria key={categoria.idCategoria} categoria={categoria.nomeCategoria} imgLivro={categoria.img} className="categoria-card"/>
           ))}
         </div>
       </div>

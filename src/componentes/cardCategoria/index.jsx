@@ -4,7 +4,7 @@ import './style.css';
 
 const CardCategoria = ({categoria, imgLivro}) => {
     return (
-        <div className="box-categoraia">
+        <div className="box-categoria">
             <img src={imgLivro} alt="Capa do Livro da Coolen Hover" />
             <div className="overlay">
                 <p>{categoria}</p>

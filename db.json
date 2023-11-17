@@ -1,67 +1,51 @@
 {
-  "livros": [
-    {
-      "id": 1,
-      "nome": "A Mulher na Janela",
-      "autor": "A.J. Finn",
-      "categoria": "Suspense",
-      "lancamento": "2018",
-      "sinopse": "A história segue Anna Fox, uma mulher agorafóbica que passa os dias observando a vida de seus vizinhos pela janela. Quando testemunha algo perturbador na casa dos novos vizinhos, ela se vê envolvida em um mistério envolvendo segredos obscuros e mentiras.",
-      "img": "https://m.media-amazon.com/images/I/71RqrTxQmpL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-      "id": 2,
-      "nome": "A Rosa do Povo",
-      "autor": "Carlos Drummond de Andrade",
-      "categoria": "Poesia",
-      "lancamento": "1945",
-      "sinopse": "'A Rosa do Povo' é uma das obras mais emblemáticas do poeta brasileiro Carlos Drummond de Andrade. Publicado originalmente em 1945, o livro é uma reflexão sobre a sociedade, a guerra, a política e o cotidiano. Drummond utiliza uma linguagem acessível e, ao mesmo tempo, profundamente poética para abordar temas universais e questões relevantes do seu tempo.",
-      "img": "https://cdn.record.com.br/wp-content/uploads/2022/10/03164632/24112-600x911.jpeg"
-    },
-    {
-      "id": 3,
-      "nome": "Meu Corpo Minha Casa",
-      "autor": "Rupi Kaur",
-      "categoria": "Poesia",
-      "lancamento": "2014",
-      "sinopse": "'Meu Corpo Minha Casa' é um livro de poesia contemporânea escrito pela autora indo-canadense Rupi Kaur. A obra explora temas como feminilidade, amor, trauma, autoaceitação e empoderamento. Rupi Kaur utiliza uma linguagem simples e direta, acompanhada de ilustrações, para criar uma conexão emocional com o leitor e abordar questões profundas e universais.",
-      "img": "https://m.media-amazon.com/images/I/41imjA072LL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 4,
-      "nome": "Da Poesia",
-      "autor": " Hilda Hilst",
-      "categoria": "Poesia",
-      "lancamento": "2004",
-      "sinopse": "Sinopse: 'Da Poesia' é uma coletânea de poemas da renomada escritora brasileira Hilda Hilst. Nesta obra, Hilda explora temas profundos e intimistas, abordando a natureza humana, o amor, a espiritualidade e a busca pelo sentido da vida. Sua escrita é caracterizada por uma linguagem intensa e provocativa, marcando um importante legado na poesia brasileira contemporânea.",
-      "img": "https://m.media-amazon.com/images/I/810bkvpbdhL._AC_UF1000,1000_QL80_.jpg"
-    }
-  ],
-  "categorias":[
-    {
-      "id": 1,
-      "name": "Romance",
-      "imagem": "https://m.media-amazon.com/images/I/91r5G8RxqfL._AC_UF1000,1000_QL80_.jpg"
-    },
-    { 
-      "id": 2,
-      "name": "Suspense",
-      "imagem": "https://m.media-amazon.com/images/I/71RqrTxQmpL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Distopia",
-      "imagem": "https://m.media-amazon.com/images/I/618iHJVMh4L.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Poesia",
-      "imagem": "https://cdn.record.com.br/wp-content/uploads/2022/10/03164632/24112-600x911.jpeg"
-    },
-    {
-      "id": 5,
-      "name": "Aventura",
-      "imagem": "https://m.media-amazon.com/images/I/51dtKEkoFlL.jpg"
-    }
-  ]
-}
+    "usuarios": [
+        {
+            "userid": "user01",
+            "nome": "Sophia",
+            "sobrenome": "Santos",
+            "email": "sophias@gmail.com",
+            "password": "teste123@",
+            "user": "sophizada07",
+            "telefone": "(11) 976543287",
+            "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+    ],
+    "categorias": [
+      {
+        "id": "categoria1",
+        "nome": "Refeição"
+      },
+      {
+        "id": "categoria2",
+        "nome": "Salgado"
+      },
+      
+      {
+        "id": "categoria3",
+        "nome": "Doces e Sobremesas"
+      },
+      {
+        "id": "categoria3",
+        "nome": "bebida"
+      },
+      {
+        "id": "categoria3",
+        "nome": "lanche"
+      }
+    ],
+    "receitas":[
+        {
+          "id":"receita1",
+          "titulo":"Pizza de Peperoni",
+          "apresentação": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "tempo-preparo-horas": "3",
+          "tempo-preparo-minutos": "30",
+          "modo-preparo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "ingrediente": "um, dois, tres, quatro, cinco, seis"
+
+        }
+    ]
+
+    
+  }

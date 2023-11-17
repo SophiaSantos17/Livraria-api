@@ -1,12 +1,9 @@
-
 import './App.css';
-import Rotas from './rotas/routes';
+import Login from './pages/login';
 
 function App() {
   return (
-    <div className="App">
-      <Rotas />
-    </div>
+    <Login></Login>
   );
 }
 

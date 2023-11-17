@@ -1,19 +1,18 @@
-import axios from 'axios';
+import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'https://vast-flannel-nightgown-fish.cyclic.cloud', 
+    baseURL: "http://localhost:5000",
 });
 
+export const getCategorias = async () => {
+    try {
+      const response = await api.get("/categorias");
+      return response.data;
+    } catch (error) {
+      console.error("Erro ao obter categorias:", error);
+      throw error;
+    }
+  };
 
-export const getLivros = () => {
-  return api.get('/livros');
-};
 
-export const getCategorias = () => {
-  return api.get('/categorias');
-}
-
-export const getInfoLivro = (chavePrimaria) => {
-  return api.get(`/${chavePrimaria}`);
-};
 export default api;
